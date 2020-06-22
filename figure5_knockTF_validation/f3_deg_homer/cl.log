@@ -1,0 +1,9 @@
+1362	 python py1_deg_FC1.5_homer.py 
+	for i in slurm_deg_fc1.5/*.slurm;do sbatch $i;done
+
+1416	 python py2_deg_FC1.5_p005_homer.py 
+	for i in slurm_deg_fc1.5_p005/*.slurm;do sbatch $i;done 
+
+1052	 python py1_deg_FC1.5_homer_append.py 
+1064	 python py2_deg_FC1.5_p005_homer_append.py 
+1071	 for i in slurm_deg_fc1.5_append/*.slurm;do sbatch $i;done

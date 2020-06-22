@@ -1,0 +1,4 @@
+1435	 cp ../Human_and_Mouse/Homo_sapiens_1000up_0down.fasta.fai .
+1441	 cat Homo_sapiens_1000up_0down.fasta.fai |cut -f1 |sort -u > Homo_sapiens_1000up_0down.fasta.fai.uniq
+
+

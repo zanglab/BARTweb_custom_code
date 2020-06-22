@@ -1,0 +1,70 @@
+====
+data 
+====
+
+knockTF data, downloaded from website http://www.licpathway.net/KnockTF/download.php
+
+differential_expression_of_genes_in_all_datasets.txt
+
+
+====
+f1_deg_identification  
+====
+identify DEG using knockTF data
+-- 1.5FC
+
+
+====
+f2_deg_bart
+    BART2 results on identified DEG from knockTF data
+    
+
+
+====
+f3_deg_homer  
+	process using homer
+
+
+
+====
+f4_deg_Pscan  
+	process using Pscan,
+        take refseq as input
+	
+
+====
+f5_encode_query_tools 
+	no public packages
+	not included in comparison
+	
+
+====
+f6_TFEA_ChIP  
+	process using TFEA_ChIP
+        take Entrez gene ID as input
+
+====
+f7_ChEA3
+	process using ChEA3
+
+
+    
+====
+fz_results_compr_append
+	compare/summarize results from multiple tools/methods
+	compare results add newly add gene sets (TF not in cistrome, but with #DEG>100)
+
+
+====
+manuscript_figs
+	compare the results of diff methods, using prediction of knockTF data, e.g.,
+	the coverage and true prediction of datasets/TFs
+	the percentage of top% true prediction of datasets/TFs
+
+
+
+NOTES:
+	we previously require TF in BART collection, and # DEG >100
+	later we use all 570 gene sets with either #up or #down genes > 100 
+	ALL results/slurm/script with xxx_append are for those newly add gene sets
+

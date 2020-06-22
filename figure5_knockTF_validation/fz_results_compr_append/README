@@ -1,0 +1,20 @@
+keep all gene list, which is fair for all tools
+
+select final rank as either up- or down- results, which has smaller relative rank
+summarize the 
+	target_TF_rank
+	total_TF 
+	p-value
+	
+
+  f1_gene_set_pre_selection:
+  f2_bart_summary:
+  f3_homer_summary:
+  f4_pscan_summary:
+  f5_encode_summary:
+  f6_tfea_summary:
+  f7_chea3_summary:
+
+Compare TF% with p-value<0.01 AND relative rank<10%
+for all gene lists/TFs, 
+as well as the lists with results among all tools

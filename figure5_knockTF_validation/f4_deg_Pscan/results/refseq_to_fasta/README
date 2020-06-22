@@ -1,0 +1,6 @@
+run_add_prefix_samtools_faidx.slurm
+	add prefix "hg38_refGene_" to refSeq ID
+	select IDs in Pscan fai
+	retrive sequence from .fa file
+
+

@@ -1,0 +1,7 @@
+1128	 mkdir gsl_install
+1131	 tar zxf gsl-2.6.tar.gz
+1133	 cd gsl-2.6
+1135	 ./configure --prefix=/nv/vol190/zanglab/zw5j/since2019_projects/marge_bart_hic_lasso/f5_knockTF_validation/f4_deg_Pscan/install/gsl/gsl_install
+1137	 make
+1138	 make install
+1139	 make installcheck

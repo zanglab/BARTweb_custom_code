@@ -1,0 +1,18 @@
+# -I : Sets the path to the include files.
+# -L : Sets the path to the libraries.
+# -l : Use this library (eg. -lm to use libmath.so, -lpthread to use libpthread.so)
+# 
+# You can have multiple -I, -L and -l entries.
+# So, your final command should look like this:
+# 
+# g++ program.cpp -o executable -I /path/to/includes -L /path/to/libraries -l library1 -l library2
+
+
+
+1157	 cd pscan/
+1165	 gsl_path="/nv/vol190/zanglab/zw5j/since2019_projects/marge_bart_hic_lasso/f5_knockTF_validation/f4_deg_Pscan/install/gsl/gsl_install"
+1166	 g++ pscan.cpp -o pscan -O3 -lgsl -lgslcblas -I ${gsl_path}/include -L ${gsl_path}/lib 
+
+1175	 LD_LIBRARY_PATH=${gsl_path}/lib
+1176	 export LD_LIBRARY_PATH
+1177	 ./pscan

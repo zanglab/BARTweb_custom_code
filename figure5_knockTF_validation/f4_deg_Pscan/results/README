@@ -1,0 +1,19 @@
+Human_and_Mouse  
+	data downloaded from Pscan website
+
+
+refseq_to_fasta
+	gene symbol to refSeq ID
+	keep only those refSeq ID overlapped with *.fai in Pscan data
+	retrive fasta seq using samtools faidx
+
+terminal_pscan
+	cp only those *.pfm available in matrix_list.txt
+	run pacan	
+	download a sample results from website
+	generate TF ID and pfm ID match table
+
+NOTES:
+	RESULTS ARE UNDER THE SAME FOLDER OF .fa FILES	
+
+

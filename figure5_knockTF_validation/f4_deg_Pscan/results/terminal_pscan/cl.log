@@ -1,0 +1,21 @@
+1752     head -n 720 pscan_web_results.res | tail -n +2|cut -f1-2 > tf_list.txt
+
+1718	 mkdir mkdir Jaspar_matrices_cp
+1719	 cp ../Human_and_Mouse/Jaspar_Matrices/Homo_sapiens_1000_0.short_matrix Jaspar_matrices_cp/
+1734	 cp ../Human_and_Mouse/Jaspar_Matrices/matrix_list.txt Jaspar_matrices_cp/
+1735	 for i in $(<Jaspar_matrices_cp/matrix_list.txt);do cp ../Human_and_Mouse/Jaspar_Matrices/$i Jaspar_matrices_cp/;done
+
+#  while IFS=$'\t' read -r -a myArray
+#  do
+#   echo "${myArray[0]}"
+#   echo "${myArray[1]}"
+#   echo "${myArray[2]}"
+#  done < myfile
+
+
+
+1786	 cd Jaspar_matrices_cp/
+1788	 pscan -q ../../refseq_to_fasta/deg_FC1.5_refseq_fa/AHR_DataSet_01_283_DnGenes.txt.fai.fa -m Homo_sapiens_1000_0.short_matrix 
+1789	 fc -l -1 >> run_pscan.slurm
+	vi run_pscan.slurm
+1790	 cd ../
