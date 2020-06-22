@@ -1,12 +1,15 @@
 # BARTweb_custom_code
 
-All custom codes/scripts used to process data and generate figure in 
+### Notes
+
+Here are all custom codes/scripts for processing the data and generating the figures in:
 
 **BARTweb: a web server for transcriptional regulator association analysis**
 
-README are attached under each folder
+There is a README attached under each folder.
 
 
+### Code for each figure:
 - Fig. 2A, figure2_compr_with_BART1.1/py1_compr_datasets_collection.py
 - Fig. 2B, figure2_compr_with_BART1.1/py1_compr_tf_collection.py
 
